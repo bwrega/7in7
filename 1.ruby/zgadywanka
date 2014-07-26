@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# Encoding: utf-8
+
+number=rand(100)
+
+begin
+	puts "Zgadnij numer, fiutku poderżnięty"
+	zgadniety = gets.to_i
+	puts "Za mało" if zgadniety<number
+	puts "Za dużo" if zgadniety>number
+end until number == zgadniety
+puts "Wygrałeś Forda"
+
